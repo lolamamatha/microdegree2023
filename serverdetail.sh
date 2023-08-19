@@ -13,8 +13,8 @@ pipeline{
              stage('build-memory details'){
                  steps{
                      sh '''
-                     echo "MEMORY DETAILS"
-                     free
+		     echo "MEMORY DETAILS"
+                     du -sch *
                      '''                
                 }
             }
